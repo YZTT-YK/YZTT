@@ -1,0 +1,6 @@
+<view bindlongpress="hide" class="box"data-id="{{index}}" wx:for="{{dataObj}}">
+
+ <view>操作时间:{{item. F_GreateDate}}</view>
+ <view>诊断结果：</view>
+ <view>{{item.Result}}</view>
+ </view>

@@ -1,0 +1,9 @@
+ <view bindlongpress="hide" class="box"data-id="{{index}}" wx:for="{{dataObj}}">
+ <view>操作时间:{{item. F_GreateDate}}</view>
+ <view>姓名:{{item.name}}</view>
+ <view>年龄:{{item.age}}</view>
+ <view>性别:{{item.sex}}</view>
+ <view>BMI:{{item.BMI}}</view>
+ <view>IBW:{{item.Ideal_Weight}}</view>
+ <view>体重增长：{{item.Weight_Change}}</view>
+ </view>

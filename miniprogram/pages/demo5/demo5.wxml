@@ -1,0 +1,66 @@
+<view class="top">
+孕妇体格评估表
+</view>
+<view class="out">
+  <view class="line1">基本信息</view>
+  <view class="line2">
+    <view class="tine">
+     <view class="rangs1">
+      <view>姓名:</view>
+      <view >{{name}}</view>
+     </view>
+      <view class="rangs2">
+        <view>孕周:</view>
+        <view>{{YZ}}</view>
+      </view>
+
+      <view class="rangs3">
+        <view>目前身高:</view>
+        <view >{{Height}}cm</view>
+      </view>
+    </view>
+    <view class="tine">
+     
+<view class="rangs4">
+  <view>年龄:</view>
+      <view >{{age}}岁</view>
+</view>
+<view class="rangs5">
+  <view>胎数:</view>
+      <view>{{Taishu}}</view>
+</view>
+<view class="rangs6">
+  <view>目前体重:</view>
+      <view>{{Weight}}kg</view>
+</view>
+
+<view class="rangs7">
+  <view>孕前体重:{{pastWeight}}kg</view>
+</view>
+    </view>
+  </view>
+  <view class="line3">计算结果</view>
+  <view class="line2">
+    <view class="tine">
+  <view class ="rangs8">孕前BMI(kg/m²)：{{cBMI}}[{{tellBmi}}]
+</view>
+    </view>
+    <view class="tine1">
+<view class="rangs8">
+<view>第{{YZ}}周,目前实际已增重{{weightChange}}kg,推荐应增重{{shouldChange}}kg(即体重应该达到{{shouldWeight}}kg),
+  目前偏差{{gap}}kg</view>
+</view>
+</view>
+</view>
+  <view class="line3">参考值</view>
+  <view class="line2">
+  <view><text space="nbsp">  {{TS}}</text></view>
+  <view><text space="nbsp">  {{cbmi}}</text></view>
+  <view><text space="nbsp">  {{pastCondition}}</text></view>
+  <view><text space="nbsp">  {{allWeight_change}}</text></view>
+  <view><text space="nbsp">  {{Weight2_13}}</text></view>
+  <view><text space="nbsp">  {{Weight14_26}}</text></view>
+  <view><text space="nbsp">  {{Weight27_40}}</text></view>
+</view>
+</view>
+<!-- <button type="default" bindtap="stamp"send-message-img="contact" >打印</button> -->

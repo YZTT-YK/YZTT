@@ -1,0 +1,84 @@
+page{
+  background:white
+}
+.banner{ 
+  width:100%; 
+  height: 345rpx; }
+  .banner swiper{
+    height: 100%;
+    width:100%;}
+.banner image{ 
+  width: 100%; 
+  height: 295rpx;
+}
+.title{
+  font-size:24px ;
+  margin-left: 6px;
+
+}
+.mall{
+  /* border: 3px solid#7988BF; */
+  width: 90%;
+  display: flex;
+  margin-left: 15px;
+  margin-top: 5px;
+  height: 50px;
+}
+
+.mall input{
+  border: 1px solid  black;
+  height: 35px;
+    color: black;
+    font-weight: bold;
+  }
+  .mall0{
+    /* border: 3px solid#7988BF; */
+    width: 60%;
+    display: flex;
+    margin-left: 15px;
+    margin-top: 5px;
+    height: 40px;
+  }
+  .mall0 input{
+    border: 1px solid  black;
+    height: 35px;
+      color: black;
+      font-weight: bold;
+    }
+    .line{
+      border-bottom: 2px solid  rgb(83, 19, 121);
+      height: 20px;
+    }
+
+ .first{
+  display: flex;
+ }
+.leftname{
+  text-align: center;
+  width: 200px;
+  height: 35px;
+}
+.Z_points{
+  width: 120px;
+  height: 35px;
+}
+.form1{
+  background:	#F5F5F5;
+
+}
+.openlive{
+  display: flex;
+}
+
+.Z_points1{ 
+  width:60px;
+  height: 25px;
+  color:white;
+  text-align: center;
+}
+.Z_points2{ 
+  width:90px;
+  height: 25px;
+  color:white;
+  text-align: center;
+}

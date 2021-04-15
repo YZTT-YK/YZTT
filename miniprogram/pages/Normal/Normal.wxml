@@ -1,0 +1,107 @@
+
+<view class="banner">
+  <swiper indicator-dots indicator-color="rgba(255,255,255,0.5)" indicator-active-color="#fff" circular autoplay interval="4000">
+    <swiper-item><image src="/images/banner1.png"/></swiper-item>
+    <swiper-item><image src="/images/banner2.png"/></swiper-item>
+    <swiper-item><image src="/images/banner3.png"/></swiper-item>
+  </swiper>
+</view>
+<view>
+<form bindsubmit="btnSub2">
+<view class="all">
+ <view class="bigmall">
+  <view class="mall">
+    <view>体重(kg)</view>
+    <input type="digit" name="Weight"bindinput="weightInput"value="{{minben}}"/>
+  </view>
+  <view class="mall">
+    <view>身高(cm)</view>
+    <input type="digit" name="Height" bindinput="heightInput"value="{{minben}}"/>
+  </view>
+ </view>
+ <view class="bigmall">
+  <view class="mall">
+    <view>腰围(cm)</view>
+    <input type="digit "name="YW"bindinput="waistlineInput"value="{{minben}}"/>
+  </view>
+  <view class="mall">
+    <view>臀围(cm)</view>
+    <input type="digit" name="TW"bindinput="hiplineInput"value="{{minben}}"/>
+  </view>
+</view>
+  <view class="bigmall">
+    <view class="mall">
+    <view>握力(kg)</view>
+    <input type="digit" name="WL"bindinput="gripInput"value="{{minben}}"/>
+  </view>
+  <view class="mall">
+    <view class="small">皮褶厚度(mm)</view>
+    <input type="digit" name="PZHD"bindinput="thicknessInput"value="{{minben}}"/>
+  </view>
+  </view>
+  <view class="bigmall">
+    <view class="mall">
+    <view>上臂围(cm)</view>
+    <input type="digit"name="SBW"bindinput="uphiplineInput"value="{{minben}}"/>
+  </view>
+  <view class="mall">
+    <view>小腿围(cm)</view>
+    <input type="digit" name="XTW"bindinput="legShankInput"value="{{minben}}"/>
+  </view>
+  </view>
+  <view class="re1">
+    <text decode="true" >\n</text>
+    <text space="npsp">  计算结果：</text></view>
+</view>
+<view class="boxs">
+<view class="bigmalls">
+  <view class="malls">
+    <view class="mall1s">IBW(kg):</view>
+    <view wx:if="{{Ideal_Weight>0||Ideal_Weight<=0}}" class="mall2s">{{Ideal_Weight}}</view>
+  </view>
+  <view class="malls">
+    <view class="mall1s">体重占IBM:</view>
+    <view wx:if="{{Weight_IBW>0||Weight_IBW<=0}}" class="mall2s">{{Weight_IBW}}%</view>
+  </view>
+</view>
+<view class="bigmalls">
+  <view class="malls">
+    <view class="mall1s">BMI(kg/m²):</view>
+    <view wx:if="{{BMI>0||BMI<=0}}" class="mall2s">{{BMI}}</view>
+  </view>
+  <view class="malls">
+    <view class="mall1s">体重增长(kg):</view>
+    <view wx:if="{{Weight_Change>0||Weight_Change<=0}}" class="mall2s">{{Weight_Change}}</view>
+  </view>
+</view>
+<view class="bigmalls">
+  <view class="malls">
+    <view class="mall1s">上臂肌围(kg):</view>
+    <view wx:if="{{SBJW>0||SBJW<=0}}" class="mall2s">{{SBJW}}</view>
+  </view>
+  <view class="malls">
+    <view class="mall1s">腰臂比:</view>
+    <view wx:if="{{YTB>0||YTB<=0}}" class="mall2s">{{YTB}}</view>
+  </view>
+</view>
+</view>
+<view class="openlive">
+  <button form-type="submit" size="mini" plain="true">保存记录</button>
+<button bindtap="fpages"size="mini"plain="true" >打印结果</button>
+<button bindtap="jump"plain="true" size="mini" >历史记录</button>
+</view></form></view>
+<view class="my-chart">
+ <view class="large"> 
+  <view class="char"> 
+   <view class="weight">体重</view>
+  <view class="red"></view>
+</view>
+<view class="char"> 
+  <view class="bmi">BMI</view>
+  <view class="blue"></view>
+</view>
+ </view>
+  <ec-canvas id="lazy-mychart-dom" canvas-id="lazy-mychart" ec="{{ lazyEc }}"></ec-canvas>
+</view>
+
+

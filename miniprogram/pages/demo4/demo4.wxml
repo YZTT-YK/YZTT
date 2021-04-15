@@ -1,0 +1,97 @@
+<view class="top">
+成人体格评估表
+</view>
+<view class="out">
+  <view class="line1">基本信息</view>
+  <view class="line2">
+    <view class="tine">
+     <view class="rangs1">
+      <view>姓名：</view>
+      <view class="sx">{{name}}</view>
+     </view>
+      <view class="rangs2">
+        <view>年龄：</view>
+        <view class="sx">{{age}}</view>
+      </view>
+      <view class="rangs3">
+        <view>上臀围：</view>
+        <view class="sx">{{SBW}}</view>
+      </view>
+      <view class="rangs4">
+        <view>目前身高：</view>
+        <view class="sx">{{Height}}</view>
+      </view>
+    </view>
+    <view class="tine">
+     
+<view class="rangs1">
+  <view>性别：</view>
+      <view class="sx">{{sex}}</view>
+</view>
+<view class="rangs2">
+  <view>腰围：</view>
+      <view class="sx">{{YW}}</view>
+</view>
+<view class="rangs3">
+  <view>小腿围：</view>
+      <view class="sx">{{XTW}}</view>
+</view>
+<view class="rangs4">
+  <view>目前体重：</view>
+      <view class="sx">{{Weight}}</view>
+</view>
+    </view>
+    <view class="tine">
+      <view class="rangs1">
+        <view>握力：</view>
+      <view class="sx">{{WL}}</view>
+      </view>
+    <view class="rangs2">
+       <view>臂围：</view>
+      <view class="sx">{{TW}}</view>
+    </view>
+    <view class="rangs3">
+      <view>皮褶厚度：</view>
+      <view class="sx">{{PZHD}}</view>
+   </view>
+     <view class="rangs4">
+      <view>近期体重：</view>
+      <view class="sx">{{Weight_Last}}</view>
+     </view>
+    </view>
+  </view>
+  <view class="line3">诊断结论</view>
+  <view class="line4">
+    <view class="bine1">
+      <view class="tabst">IBW：</view>
+      <view class="sxo">{{Ideal_Weight}}</view>
+      <view class="sxx"></view>
+    </view>
+    <view class="bine1">
+      <view class="tabst">体重占比：</view>
+      <view class="sxo">{{Weight_IBW}}</view>
+      <view class="sxx"></view>
+    </view>
+    <view class="bine1">
+      <view class="tabst">BMI：</view>
+      <view class="sxo">{{BMI}}</view>
+      <view class="sxx">{{tellBmi}}</view>
+    </view>
+    <view class="bine1">
+      <view class="tabst">体重变化：</view>
+      <view class="sxo">{{Weight_Change}}</view>
+      <view class="sxx"></view>
+    </view>
+    <view class="bine1">
+      <view class="tabst">腰臀比：</view>
+      <view class="sxo">{{YTB}}</view>
+      <view class="sxx">{{tellWhr}}</view>
+    </view>
+    <view class="bine1">
+      <view class="tabst">上臂肌围：</view>
+      <view class="sxo">{{SBJW}}</view>
+      <view class="sxx">{{tellUpHipliness}}</view>
+    </view>
+  </view>
+</view>
+<!-- <button type="default" bindtap="stamp"send-message-img="contact" >打印</button> -->

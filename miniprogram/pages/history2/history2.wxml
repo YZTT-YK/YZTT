@@ -1,0 +1,24 @@
+<view bindlongpress="hide" class="box"data-id="{{index}}" wx:for="{{dataObj}}">
+
+<view>操作时间:{{item.F_GreateDate}}</view>
+<view>诊断结果：</view>
+<view>Z评分</view>
+<view wx:if="{{item.Height_For_Age_Z}}">年龄别身长：{{item.Height_For_Age_Z}}</view>
+<view wx:if="{{item.Weight_For_Age_Z}}">年龄别体重：{{item.Weight_For_Age_Z}}</view>
+<view wx:if="{{item.Weight_For_Height_Z}}">身高别体重：{{item.Weight_For_Height_Z}}</view>
+<view wx:if="{{item.BMI_For_Age_Z}}">年龄别BMI：{{item.BMI_For_Age_Z}}</view>
+<view wx:if="{{item.Head_For_Age_Z}}">年龄别头围：{{item.Head_For_Age_Z}}</view>
+<view wx:if="{{item.ZSBBW_For_Age_Z}}">年龄别中上臂臂围：{{item.ZSBBW_For_Age_Z}}</view>
+<view wx:if="{{item.STJPZHD_For_Age_Z}}">年龄别三头肌皮褶厚度：{{item.STJPZHD_For_Age_Z}}</view>
+<view wx:if="{{item.JJXPZHD_For_Age_Z}}">年龄别肩胛下皮褶厚度：{{item.JJXPZHD_For_Age_Z}}</view>
+<view wx:if="{{item.Kaup}}">Kaup指数：{{item.Kaup}}</view>
+<view>P评分</view>
+<view wx:if="{{item.Height_For_Age_P}}">年龄别身长：{{item.Height_For_Age_P}}</view>
+<view wx:if="{{item.Weight_For_Age_P}}">年龄别体重：{{item.Weight_For_Age_P}}</view>
+<view wx:if="{{item.Weight_For_Height_P}}">身高别体重：{{item.Weight_For_Height_P}}</view>
+<view wx:if="{{item.BMI_For_Age_P}}">年龄别BMI：{{item.BMI_For_Age_P}}</view>
+<view wx:if="{{item.Head_For_Age_P}}">年龄别头围：{{item.Head_For_Age_P}}</view>
+<view wx:if="{{item.ZSBBW_For_Age_P}}">年龄别中上臂臂围：{{item.ZSBBW_For_Age_P}}</view>
+<view wx:if="{{item.STJPZHD_For_Age_P}}">年龄别三头肌皮褶厚度：{{item.STJPZHD_For_Age_P}}</view>
+<view wx:if="{{item.JJXPZHD_For_Age_P}}">年龄别肩胛下皮褶厚度：{{item.JJXPZHD_For_Age_P}}</view>
+</view>

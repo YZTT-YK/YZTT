@@ -1,0 +1,77 @@
+<view class="banner">
+  <swiper indicator-dots indicator-color="rgba(255,255,255,0.5)" indicator-active-color="#fff"  circular autoplay interval="4000">
+    <swiper-item><image src="/images/banner1(1).png"/></swiper-item>
+    <swiper-item><image src="/images/banner2(1).png"/></swiper-item>
+    <swiper-item><image src="/images/banner3(1).png"/></swiper-item>
+  </swiper>
+</view>
+<form bindsubmit="btnSub2">
+<view class="all">
+  <view class="bigmall">
+  <view class="mall">
+<view>身高:</view>
+<input type="digit"   name="Height"bindinput="heightInput"/>
+</view>
+<view class="mall">
+<view>孕前体重:</view>
+<input type="digit" name="Weight"bindinput="pastweightInput"/>
+</view>
+</view> 
+<view class="bigmall">
+  <view class="mall">
+<view>目前体重:</view>
+<input type="digit" name="Weight"bindinput="weightInput"/>
+</view>
+<view class="mall">
+<view>孕周:</view>
+<input type="number" name="Weight"bindinput="pWeek"/>
+</view>
+</view>
+<view class="mall">
+<view>胎数:</view>
+<input type="digit" name="taishu"bindinput="bindTaishu"/>
+</view>
+</view>
+<view class="jisuan" >计算结果：</view>
+<view class="jisuan1">
+<view class="jisuan11">孕前BMI(kg/m²)：<view wx:if="{{cBMI>0}}">{{cBMI}}{{tellBmi}}</view></view>
+<view class="jisuan12">第{{YZ}}周，目前实际已增重{{weightChange}}kg，推荐应增重{{shouldChange}}kg
+  <view wx:if="{{shouldWeight>0}}">(即体重应达到{{shouldWeight}}kg)，目前偏差{{gap}}kg.{{suggest}}</view>
+</view>
+</view>
+<view>
+  <view class="jisuan" ><text space="nbsp">参考值</text>  </view>
+<view class="reference"> 
+  <view><text space="nbsp">  {{TS}}</text></view>
+  <view><text space="nbsp">  {{cbmi}}</text></view>
+  <view><text space="nbsp">  {{pastCondition}}</text></view>
+  <view><text space="nbsp">  {{allWeight_change}}</text></view>
+  <view><text space="nbsp">  {{Weight2_13}}</text></view>
+  <view><text space="nbsp">  {{Weight14_26}}</text></view>
+  <view><text space="nbsp">  {{Weight27_40}}</text></view>
+</view>
+</view>
+<view class="openlive">
+  <button form-type="submit" size="mini" plain="true">保存记录</button>
+<button bindtap="fpages"size="mini"plain="true" >打印结果</button>
+<button bindtap="jump"plain="true" size="mini" >历史记录</button>
+</view></form>
+<!-- 折线图 -->
+<view class="my-chart">
+ <view class="large"> 
+  <view class="char"> 
+   <view class="maxWeight">最大标准体重</view>
+  <view class="red"></view>
+</view>
+<view class="char"> 
+   <view class="fitWeight">体重</view>
+  <view class="green"></view>
+</view>
+<view class="char"> 
+  <view class="minWeight">最小标准体重</view>
+  <view class="blue"></view>
+</view>
+ </view>
+  <ec-canvas id="lazy-mychart-dom" canvas-id="lazy-mychart" ec="{{ lazyEc }}"></ec-canvas>
+</view>
+

@@ -1,0 +1,10 @@
+<view class="box">
+<view class="top">
+<image src="../../images/user.JPG"/>
+<view class="txt">用户名：</view>
+<view class="adminname">{{name}}</view>
+</view>
+<view class="txt">体适能健康测评研究室，是按照国务院颁布的《全民健身计划纲要》规定而设立的。通过运动机体的有氧代谢能力检测，评价受检者的健康、衰老或者疾病康复状况，针对不同状况制定个性化的康复处方。</view>
+</view>
+
+<button  type="default"plain="true"bindtap="exitSy" >退出登录</button>

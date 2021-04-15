@@ -1,0 +1,81 @@
+<view class="top">
+儿童体格评估
+</view>
+<view class="out">
+  <view class="line1">基本信息</view>
+  <view class="line2">
+    <view class="tine">
+     <view class="rangs1">
+      <view>姓名:</view>
+      <view >{{name}}</view> 
+     </view>
+      <view class="rangs2">
+        <view>性别:</view>
+        <view>{{sex}}</view>
+      </view>
+
+      <view class="rangs3">
+        <view>目前身高:</view>
+        <view >{{Height}}cm</view>
+      </view>
+    </view>
+    <view class="tine">
+     
+<view class="rangs1">
+  <view>年龄:</view>
+      <view >{{age}}岁{{months}}月</view>
+</view>
+<view class="rangs2">
+  <view>头围:</view>
+      <view>{{TW}}cm</view>
+</view>
+<view class="rangs3">
+  <view>目前体重:</view>
+      <view>{{Weight}}kg</view>
+</view>
+    </view>
+<view class="tine">
+  <view class="rangs1">腰围:{{YW}}cm</view>
+<view class="rangs2">
+  <view>出生身长:{{bornWeight}}kg</view>
+</view>
+<view class="rangs3">
+  <view>出生体重:{{bornWeight}}kg</view>
+</view>
+    </view>
+    <view class="tine">
+  <view class="rangs4">中上臂臂围:{{ZSBBW}}cm</view>
+<view class="rangs4">
+  <view>三头肌皮褶厚度:{{STJPZHD}}cm</view>
+</view>
+    </view>
+    <view class="tine">
+    <view class="rangs3">肩胛下皮褶厚度:{{JJXPZHD}}cm</view>
+    </view>
+  </view>
+  <view class="line3">Z评分</view>
+  <view>Z评分</view>
+  <view class="line2">
+    <view class="tine">年龄别身长:{{z1}}{{ZScoreStr1}}</view>  
+    <view class="tine">年龄别体重:{{z2}}{{ZScoreStr2}}</view>
+    <view class="tine">身高别体重:{{z3}}{{ZScoreStr3}}</view>
+    <view class="tine">年龄别BMI:{{z4}}{{ZScoreStr4}}</view>
+    <view class="tine">年龄别头围:{{z5}}{{ZScoreStr5}}</view>
+    <view class="tine">年龄别中上臂臂围:{{z6}}{{ZScoreStr6}}</view>
+    <view class="tine">年龄别三头肌皮褶厚度:{{z7}}{{ZScoreStr7}}</view>
+    <view class="tine">年龄别肩胛下皮褶厚度:{{z8}}{{ZScoreStr8}}</view>
+</view>
+  <view class="line3">百分位数</view>
+  <view>P评分</view>
+  <view class="line2">
+    <view class="tine">年龄别身长:{{p1}}{{PerScoreStr1}}</view>  
+    <view class="tine">年龄别体重:{{p2}}{{PerScoreStr2}}</view>
+    <view class="tine">身高别体重:{{p3}}{{PerScoreStr3}}</view>
+    <view class="tine">年龄别BMI:{{p4}}{{PerScoreStr4}}</view>
+    <view class="tine">年龄别头围:{{p5}}{{PerScoreStr5}}</view>
+    <view class="tine">年龄别中上臂臂围:{{p6}}{{PerScoreStr6}}</view>
+    <view class="tine">年龄别三头肌皮褶厚度:{{p7}}{{PerScoreStr7}}</view>
+    <view class="tine">年龄别肩胛下皮褶厚度:{{p8}}{{PerScoreStr8}}</view>
+</view>
+</view>
+<!-- <button type="default" bindtap="stamp"send-message-img="contact" >打印</button> -->

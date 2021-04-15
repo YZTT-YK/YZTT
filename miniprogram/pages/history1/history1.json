@@ -1,0 +1,8 @@
+{
+  "usingComponents": {},
+  "enablePullDownRefresh":true,
+  "backgroundColorTop": "#7988BF",
+  "navigationBarTitleText": "历史记录",
+  "navigationBarTextStyle":"black"
+  
+}

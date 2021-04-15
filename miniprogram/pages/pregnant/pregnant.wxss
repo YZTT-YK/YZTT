@@ -1,0 +1,144 @@
+page{
+  background:#ededf8
+}
+.banner{ 
+  width:100%; 
+  height: 345rpx; }
+  .banner swiper{
+    height: 100%;
+    width:100%;}
+.banner image{ 
+  width: 100%; 
+  height: 295rpx;
+}
+.all{
+  border: 3px solid rgb(83, 19, 121);
+  border-style:dashed;
+  height: 174px;
+  margin-bottom: 10px;
+
+  font-size: 15px; 
+}
+.all .bigmall{
+  display: flex;
+  height: 60px; 
+}
+.all .mall{
+  /* border: 3px solid#7988BF; */
+  display: flex;
+  margin: 5px;
+  height: 50px;
+  width: 135px;
+}
+.all .mall view{
+  width: 350px;
+  border: 3px solid  rgb(83, 19, 121);
+  border-radius: 15px;
+  /* background:#CACAE5 ; */
+  align-items: center;
+  vertical-align: middle;
+  text-align: center;
+  line-height: 35px;
+  height: 35px;
+  font-weight: bold;
+  color: black;
+}
+.all .mall input{
+  border-bottom: 2px solid  rgb(83, 19, 121);
+  height: 35px;
+  margin-left: 2px;
+  color: black;
+  font-weight: bold;
+}
+.all .bigmall{
+  display: flex;
+  height: 60px; 
+}
+.jisuan{
+  font-size:25px;
+  width: 140px;
+  border: 3px solid rgb(83, 19, 121);
+  border-radius: 15px;
+  align-items: center;
+  vertical-align: middle;
+  text-align: center;
+  line-height: 35px;
+  height: 35px;
+  font-weight: bold;
+  color: black;
+}
+.jisuan1{
+   /* box-sizing: border-box; */
+   margin: 5px;
+  border: 3px solid  rgb(83, 19, 121);
+  border-style:dashed;
+  height: 160px;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+.jisuan11{  
+  height: 60px;
+  display: flex;
+  }
+  .jisuan12{  
+    height: 100px;
+    display: flex;
+    }
+    .reference{
+       /* box-sizing: border-box; */
+       margin: 10px;
+      border: 3px solid rgb(83, 19, 121);
+      border-style:dashed;
+      height: 190px;
+      margin-bottom: 20px;
+      font-size: 20px;
+    }
+    .openlive{
+      display: flex;
+    }
+    .my-chart .char .red{
+      background-color:#c23531;
+      margin: 10px;
+      width: 35px;
+      height: 3px;
+    }
+    .my-chart .char .blue{
+      background-color: #2f4554;
+      margin: 10px;
+      width: 35px;
+      height: 3px;
+    }
+    .my-chart .char .green{
+      background-color:green;
+      margin: 10px;
+      width: 35px;
+      height: 3px;
+    }
+ 
+    .my-chart .char{
+      display: flex;
+      width: 150px;
+      height: 40px;
+      margin-left:7px ;
+      margin-right: 5px;
+    }
+    .large{
+      display: flex;
+      font-weight: bold;}
+      ec-canvas{
+        width: 100%;
+        height: 100%;
+      }
+      .my-chart{
+    
+        align-items: center;
+        justify-content: space-between;
+        /* box-sizing: border-box; */
+        margin: 5px;
+        border: 5px solid #CBCBE6;
+        border-radius: 15px;
+        width:95%;
+        height:350px;
+        background-color: white;
+      }
+    

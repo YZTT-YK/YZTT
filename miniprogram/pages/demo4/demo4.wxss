@@ -1,0 +1,83 @@
+.top{
+ font-size: 26px;
+ text-align: center;
+ margin: 10px;
+}
+.out{
+  border: 2px solid darkgrey;
+  margin: 2px;
+  font-size: 13px;
+}
+.out .line1{
+  border: 1px solid darkgrey;
+  font-size: 18px;
+  height: 40px;
+  line-height: 40px;
+  background-color: rgb(192, 191, 190);
+}
+.out .line2{
+  margin-bottom: 8px;
+}
+.out .line2 .tine{
+  display: flex;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  margin-left: 5px;
+}
+.out .line2 .tine .rangs1{
+  width: 80px;
+  display: flex;
+}
+.out .line2 .tine .rangs2{
+  width: 60px;
+  display: flex;
+}
+.out .line2 .tine .rangs3{
+  width: 85px;
+  display: flex;
+}
+.out .line2 .tine .rangs4{
+  width: 88px;
+  display: flex;
+}
+.out .line3{
+  border: 1px solid darkgrey;
+  font-size: 20px;
+  height: 40px;
+  line-height: 40px;
+  background-color: rgb(192, 191, 190);
+}
+.out .line4{
+  margin-bottom: 5px;
+}
+.out .line4 .bine1{
+  display: flex;
+  margin-left: 5px;
+  margin-top: 7px;
+  margin-bottom: 5px;
+  height: 30px;
+  /* background-color: seagreen; */
+  line-height: 30px;
+}
+.sx{
+  font-size: 12px;
+  line-height: 18px;
+}
+.sxx{
+  line-height: 18px;
+  margin-left: 18px;
+  width: 200px;
+  font-size: 12px;
+  /* background-color: rgb(11, 245, 253); */
+}
+.tabst{
+  width: 100px;
+  /* background-color: seagreen; */
+}
+.sxo{
+  /* font-size: 10px; */
+  font-size: 12px;
+  width: 50px;
+  margin-left: 3px;
+  /* background-color: rgb(251, 255, 7); */
+}

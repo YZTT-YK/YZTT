@@ -1,0 +1,180 @@
+<view class="banner">
+  <swiper indicator-dots indicator-color="rgba(255,255,255,0.5)" indicator-active-color="#000" indicator-color="#C0D9D9 " circular autoplay interval="4000">
+    <swiper-item><image src="/images/banner1(1).png"/></swiper-item>
+    <swiper-item><image src="/images/banner2(1).png"/></swiper-item>
+    <swiper-item><image src="/images/banner3(1).png"/></swiper-item>
+  </swiper>
+</view><form bindsubmit="btnSub">
+<view class="title">请填写：</view>
+<view class="line"></view>
+<view>
+<view class="mall">
+<view>目前身长(cm):</view>
+<input name="Height"bindinput="heightInput"/>
+<view>目前体重(kg):</view>
+<input name="Weight"bindinput="weightInput"/>
+</view>
+<view class="mall">
+<view>出生身长(cm):</view>
+<input name="bornHeight"bindinput="bornHeightInput"/>
+<view>出生体重(kg):</view>
+<input name="bornWeight"bindinput="bornWeightInput"/>
+</view>
+<view class="mall">
+ <text space="ensp">头围(cm):  </text>
+<input name="head"bindinput="headInput"/>
+<text space="ensp">胸围(cm):  </text>
+<input name="chest"bindinput="chestInput"/>
+</view>
+<view class="mall0">
+ <text space="ensp">中上臂臂围（cm）:    </text>
+<input name="arm"bindinput="armInput"/>
+</view>
+<view class="mall0">
+<view>三头肌皮褶厚度（cm）:</view>
+<input name="triceps"bindinput="tricepsInput"/>
+</view>
+<view class="mall0">
+<view>肩胛下皮褶厚度（cm）:</view>
+<input name="arm"bindinput="shoulderInput"/>
+</view>
+</view>
+<view class="line"></view>
+<view class="title">Z评分：</view>
+<view class="form1">
+<view class="first">
+<view class="leftname">评价指标</view><view class="Z_points">Z-评分</view>
+</view>
+<view class="first">
+  <block wx:if="{{(Height!=0)}}">
+<view class="leftname">年龄别身长(高)</view>
+<view style="background-color:{{Color1}}"  class="Z_points1">{{z1}}</view>
+<view style="color:{{Color1}}" >{{ZScoreStr}}</view>
+  </block>
+</view>
+<view class="first">
+  <block wx:if="{{0<months&&months<=120&&Weight!=0}}">
+<view class="leftname">年龄别体重</view><view style="background-color:{{Color2}}" class="Z_points1">{{z2}}</view>
+<view style="color:{{Color2}}" >{{ZScoreStr2}}</view>
+</block> 
+</view>
+<view class="first">
+  <block wx:if="{{((months<=24&&Height>=45&&Height<=110)||(months>24&&Height>=65&&Height<=120))&&Weight!=0&&Height!=0}}">
+<view class="leftname">身高别体重</view>
+<view style="background-color:{{Color3}}" class="Z_points1">{{z3}}</view>
+<view style="color:{{Color3}}" >{{ZScoreStr3}}</view>
+</block>
+</view>
+<view class="first">
+  <block wx:if="{{Weight!=0&&Height!=0}}">
+<view class="leftname">年龄别BMI</view>
+<view style="background-color:{{Color4}}" class="Z_points1">{{z4}}</view>
+<view style="color:{{Color4}}" >{{ZScoreStr4}}</view> 
+  </block>
+</view>
+<view class="first">
+  <block wx:if="{{months<=60&& head!=0}}">
+<view class="leftname">年龄别头围</view>
+<view style="background-color:{{Color5}}" class="Z_points1">{{z5}}</view>
+<view style="color:{{Color5}}" >{{ZScoreStr5}}</view> 
+</block>
+</view>
+<view class="first">
+  <block wx:if="{{months >= 3 && months <= 60&&arm!=0}}">
+<view class="leftname">年龄别中上臂臂围</view>
+<view style="background-color:{{Color6}}" class="Z_points1">{{z6}}</view>
+<view style="color:{{Color6}}" >{{ZScoreStr6}}</view> 
+</block>
+</view>
+<view class="first">
+  <block wx:if="{{months >= 3 && months <= 60&&triceps!=0}}">
+<view class="leftname">年龄别三头肌皮褶厚度</view>
+<view style="background-color:{{Color7}}" class="Z_points1">{{z7}}</view>
+<view style="color:{{Color7}}" >{{ZScoreStr7}}</view> 
+</block>
+</view>
+<view class="first">
+  <block wx:if="{{months >= 3 && months <= 60&&shoulder!=0}}">
+<view class="leftname">年龄别肩胛下皮褶厚度</view>
+<view style="background-color:{{Color8}}" class="Z_points1">{{z8}}</view>
+<view style="color:{{Color8}}" >{{ZScoreStr8}}</view> 
+</block>
+</view>
+
+<view class="first">
+  <block wx:if="{{Weight!=0&&Height!=0}}">
+<view class="leftname">Kaup指数=</view>
+<view style="background-color:{{kaupColor}}" class="Z_points1">{{Kaup}}</view>
+<view>{{Kaup1}}</view>
+  </block>
+</view>
+</view>
+<view class="line"></view>
+<view class="title">百分位数:</view>
+<view class="form1">
+  <view class="first">
+<view class="leftname">评价指标</view><view class="Z_points">百分位数</view>
+</view>
+  <view class="first">
+  <block wx:if="{{(Height!=0)}}">
+<view class="leftname">年龄别身长(高)</view>
+<view style="background-color:{{pColor1}}"  class="Z_points2">{{p1}}</view>
+<view style="color:{{pColor1}}" >{{PerScoreStr1}}</view>
+  </block>
+</view>
+<view class="first">
+  <block wx:if="{{0<months&&months<=120&&Weight!=0}}">
+<view class="leftname">年龄别体重</view><view style="background-color:{{pColor2}}" class="Z_points2">{{p2}}</view>
+<view style="color:{{pColor2}}" >{{PerScoreStr2}}</view>
+</block> 
+</view>
+<view class="first">
+  <block wx:if="{{((months<=24&&Height>=45&&Height<=110)||(months>24&&Height>=65&&Height<=120))&&Weight!=0&&Height!=0}}">
+<view class="leftname">身高别体重</view>
+<view style="background-color:{{pColor3}}" class="Z_points2">{{p3}}</view>
+<view style="color:{{pColor3}}" >{{PerScoreStr3}}</view>
+</block>
+</view>
+<view class="first">
+  <block wx:if="{{Weight!=0&&Height!=0}}">
+<view class="leftname">年龄别BMI</view>
+<view style="background-color:{{pColor4}}" class="Z_points2">{{p4}}</view>
+<view style="color:{{pColor4}}" >{{PerScoreStr4}}</view> 
+  </block>
+</view>
+<view class="first">
+  <block wx:if="{{months<=60&& head!=0}}">
+<view class="leftname">年龄别头围</view>
+<view style="background-color:{{pColor5}}" class="Z_points2">{{p5}}</view>
+<view style="color:{{pColor5}}" >{{PerScoreStr5}}</view> 
+</block>
+</view>
+<view class="first">
+  <block wx:if="{{months >= 3 && months <= 60&&arm!=0}}">
+<view class="leftname">年龄别中上臂臂围</view>
+<view style="background-color:{{pColor6}}" class="Z_points2">{{p6}}</view>
+<view style="color:{{pColor6}}" >{{PerScoreStr6}}</view> 
+</block>
+</view>
+<view class="first">
+  <block wx:if="{{months >= 3 && months <= 60&&triceps!=0}}">
+<view class="leftname">年龄别三头肌皮褶厚度</view>
+<view style="background-color:{{pColor7}}" class="Z_points2">{{p7}}</view>
+<view style="color:{{pColor7}}" >{{PerScoreStr7}}</view> 
+</block>
+</view>
+<view class="first">
+  <block wx:if="{{months >= 3 && months <= 60&&shoulder!=0}}">
+<view class="leftname">年龄别肩胛下皮褶厚度</view>
+<view style="background-color:{{pColor8}}" class="Z_points2">{{p8}}</view>
+<view style="color:{{pColor8}}" >{{PerScoreStr8}}</view> 
+</block>
+</view>
+</view>
+<view class="openlive">
+  <button form-type="submit" size="mini" plain="true">保存记录</button>
+<button bindtap="fpages"size="mini"plain="true" >打印结果</button>
+<button bindtap="jump"plain="true" size="mini" >历史记录</button>
+</view>
+</form>
+<text>\n</text><text>\n</text>

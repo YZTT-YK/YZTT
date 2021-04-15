@@ -1,0 +1,43 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/canvas/canvas",
+    "pages/history/history",
+    "pages/demo2/demo2",
+    "pages/Normal/Normal",
+    "pages/demo4/demo4",
+    "pages/demo5/demo5",
+    "pages/demo3/demo3",
+    "pages/pregnant/pregnant",
+    "pages/baby/baby",
+    "pages/history1/history1",
+    "pages/history2/history2"
+   
+  ],
+  "window":{
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#7988BF",
+    "navigationBarTitleText": "体格测试",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "color": "#fff",
+    "selectedColor": "#87c38f",
+    "backgroundColor": "#7988BF",
+    "borderStyle": "white",
+    
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "images/home2.png",
+      "selectedIconPath": "images/home0.png"
+    },{
+      "pagePath": "pages/demo2/demo2",
+      "text": "我的",
+      "iconPath": "images/user2.png",
+      "selectedIconPath": "images/user0.png"
+    }]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
