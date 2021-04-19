@@ -1,3 +1,0 @@
-<view wx:for="{{array}}">
- {{item}}
-</view>

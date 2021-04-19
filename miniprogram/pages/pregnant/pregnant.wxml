@@ -35,8 +35,9 @@
 <view class="jisuan" >计算结果：</view>
 <view class="jisuan1">
 <view class="jisuan11">孕前BMI(kg/m²)：<view wx:if="{{cBMI>0}}">{{cBMI}}{{tellBmi}}</view></view>
-<view class="jisuan12">第{{YZ}}周，目前实际已增重{{weightChange}}kg，推荐应增重{{shouldChange}}kg
-  <view wx:if="{{shouldWeight>0}}">(即体重应达到{{shouldWeight}}kg)，目前偏差{{gap}}kg.{{suggest}}</view>
+<view>
+  <text>第{{YZ}}周，目前实际已增重{{weightChange}}kg，推荐应增重{{shouldChange}}kg</text>
+  <text wx:if="{{shouldWeight>0}}">(即体重应达到{{shouldWeight}}kg)，目前偏差{{gap}}kg.{{suggest}}</text>
 </view>
 </view>
 <view>

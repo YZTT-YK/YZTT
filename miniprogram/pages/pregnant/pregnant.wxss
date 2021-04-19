@@ -80,10 +80,7 @@ page{
   height: 60px;
   display: flex;
   }
-  .jisuan12{  
-    height: 100px;
-    display: flex;
-    }
+
     .reference{
        /* box-sizing: border-box; */
        margin: 10px;

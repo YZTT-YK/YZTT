@@ -117,6 +117,18 @@
         {
           "name": "pages/Normal/Normal",
           "pathName": "pages/Normal/Normal",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/pregnant/pregnant",
+          "pathName": "pages/touchwx-master",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/touchwx-master",
+          "pathName": "pages/touchwx-master/pages/index",
           "scene": null
         }
       ]
