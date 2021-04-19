@@ -1,113 +1,65 @@
-
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
-  },
-onLoad(){
-  var that = this;
-    wx.showLoading({
-   
-    title: '开启蓝牙适配'
-   
-    });
-   
-    wx.openBluetoothAdapter({
-   
-    success: function (res) {
-   
-    console.log("初始化蓝牙适配器");
-   
-    console.log(res);
-   
-    that.getBluetoothAdapterState();
-   
-    },
-   
-    fail: function (err) {
-   
-    console.log(err);
     
-    wx.showToast({
-   
-    title: '蓝牙初始化失败',
-   
-    icon: 'success',
-   
-    duration: 2000
-   
-    })
-   
-    setTimeout(function () {
-   
-    wx.hideToast()
-   
-    }, 2000)
-   
-    }
-   
-    });
-   
-    wx.onBluetoothAdapterStateChange(function (res) {
-   
-    var available = res.available;
-   
-    if (available) {
-   
-    that.getBluetoothAdapterState();
-   
-    }
-   
-    })
-},
-getBluetoothAdapterState: function () {
+  },
 
-  var that = this;
- 
-  wx.getBluetoothAdapterState({
- 
-  success: function (res) {
- 
-  var available = res.available,
- 
-  discovering = res.discovering;
- 
-  if (!available) {
- 
-  wx.showToast({
- 
-  title: '设备无法开启蓝牙连接',
- 
-  icon: 'success',
- 
-  duration: 2000
- 
-  })
- 
-  setTimeout(function () {
- 
-  wx.hideToast()
- 
-  }, 2000)
- 
-  } else {
- 
-  if (!discovering) {
- 
-  that.startBluetoothDevicesDiscovery();
- 
-  that.getConnectedBluetoothDevices();
- 
-  }
- 
-  }
- 
-  }
- 
-  })
- 
+  /**
+   * 生命周期函数--监听页面加载
+   */
+  onLoad: function (options) {
+    
+  },
+
+  /**
+   * 生命周期函数--监听页面初次渲染完成
+   */
+  onReady: function () {
+    
+  },
+
+  /**
+   * 生命周期函数--监听页面显示
+   */
+  onShow: function () {
+    
+  },
+
+  /**
+   * 生命周期函数--监听页面隐藏
+   */
+  onHide: function () {
+    
+  },
+
+  /**
+   * 生命周期函数--监听页面卸载
+   */
+  onUnload: function () {
+    
+  },
+
+  /**
+   * 页面相关事件处理函数--监听用户下拉动作
+   */
+  onPullDownRefresh: function () {
+    
+  },
+
+  /**
+   * 页面上拉触底事件的处理函数
+   */
+  onReachBottom: function () {
+    
+  },
+
+  /**
+   * 用户点击右上角分享
+   */
+  onShareAppMessage: function () {
+    
   }
 })
